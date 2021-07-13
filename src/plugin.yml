@@ -1,0 +1,15 @@
+main: us.mcfriendly.core.Main
+name: MCF-Core
+version: 1.0
+api-version: 1.15
+depend: [Vault, PlaceholderAPI]
+author: GoSwimmy
+commands:
+  rounds:
+  playerwarps:
+    aliases: [pwarp, pwarps, playerwarp]
+  sc:
+    aliases: [staffchat]
+  core:
+  createtag:
+  checkup:

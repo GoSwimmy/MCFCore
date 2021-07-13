@@ -1,0 +1,58 @@
+mysql:
+  host: localhost
+  port: 3306
+  ssl: false
+  username: username
+  password: password
+  database: database
+  
+options:
+  checkup:
+    api-key: "api-key"
+  createtag:
+    messages:
+      player-offline: "&cThat player is not online!"
+      doesnt-have-tag: "&cThat player does not have a tag!"
+      created-tag: "&aTag has been created!"
+      player-created-tag: "&aYour tag has been created! Do /tags to equip it!"
+  rankreward:
+    donorpermission: "mcf.donor"
+    adminpermission: "mcf.admin"
+    messages:
+      forceuse: "&c%player% can no longer use Rank Reward!"
+      alreadyclaimed: "&cYou have already claimed your Rank Reward!"
+      reset: "&aYou have reset %player%'s rank rewards."
+      notdonor: "&cYou must be a Donor to use this command!"
+      notadmin: "&cYou must be a Admin to use this subcommand!"
+  joinevent:
+    max-players: 50
+    permission: mcf.donor
+    kick-message: "&cThe server is currently full! To join the server while its full, purchase a rank at &f&nstore.mcfriendly.us"
+  staffchat:
+    permission: mcf.staff
+    format: "&e&lSC &7>> &f%username%&7: &f%message%"
+    messages:
+      nopermission: "&cYou do not have permission to use this command!"
+      invalidusage: "&cInvalid usage, try /staffchat <message>"
+  playerwarps:
+    create-permission: mcf.donor
+    create-price: 1000
+    messages:
+      nobalance: "&cYou do not have enough money to create a Player Warp!"
+      databaseerr: "&cThere was a Database error while trying to update your Player Warp!"
+      nopermission: "&cYou must be a Donator to use this command!"
+      nopermissionadmin: "&cYou must be a Administrator to use this command!"
+      alreadyhavepwarp: "&cYou already have a Player Warp!"
+      stringtoolong: "&cThere is a max character limit of 24!"
+      warpdoesnotexist: "&cThat warp does not exist!"
+      teleported: "&aYou have been teleported to %pwarpname%!"
+      noiteminhandforicon: "&cYou must have an item in your hand to set as a icon!"
+      createwarp: "%pwarpname% &f- &aCreated"
+      deletewarp: "%pwarpname% &f- &aDeleted"
+      renamewarp: "%pwarpname% &f- &arenamed to %newwarpname%"
+      iconchange: '%pwarpname% &f- &aicon changed to %newiconname%'
+      lorechange: '%pwarpname% &f- &alore %loreline% changed to %newlore%'
+      relocated: '%pwarpname% &f- &aRelocated!'
+      relocatednomoney: "&cYou do not have enough money to relocate a Player Warp!"
+      nowarp: "&cYou do not have a Player Warp!"
+  prefix: "&6&lMC&f&lF &r"

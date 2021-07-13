@@ -1,0 +1,5 @@
+package us.mcfriendly.core.features.portal;
+
+public class PortalCommand {
+	
+}
